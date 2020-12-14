@@ -1,0 +1,647 @@
+cache.platform = linux-g++
+cache.xplatform = linux-g++
+cache.machineTuple._KEYS_ = result msgs tuple
+cache.machineTuple.result = true
+cache.machineTuple.msgs = "+ g++ -dumpmachine" "> x86_64-linux-gnu"
+cache.machineTuple.tuple = x86_64-linux-gnu
+cache.verifyspec._KEYS_ = result msgs
+cache.verifyspec.result = true
+cache.verifyspec.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/verifyspec && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/verifyspec" "+ cd /home/ilya/QtWS/cg_3/config.tests/verifyspec && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/verifyspec -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o verifyspec.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/verifyspec/verifyspec.cpp" "> g++ -Wl,-O1 -o verifyspec verifyspec.o      "
+cache.architecture._KEYS_ = result msgs arch subarch buildabi
+cache.architecture.result = true
+cache.architecture.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/arch && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/arch" "+ cd /home/ilya/QtWS/cg_3/config.tests/arch && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/arch -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o arch.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/arch/arch.cpp" "> g++ -Wl,-O1 -o arch arch.o      " "Detected architecture: x86_64 (mmx sse sse2)"
+cache.architecture.arch = x86_64
+cache.architecture.subarch = mmx sse sse2
+cache.architecture.buildabi = x86_64-little_endian-lp64
+cache.sse2._KEYS_ = result msgs
+cache.sse2.result = true
+cache.sse2.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=sse2 /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -msse2 -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_SSE2 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.aesni._KEYS_ = result msgs
+cache.aesni.result = true
+cache.aesni.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=aesni /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -maes -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AESNI -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.alloca_h._KEYS_ = result msgs
+cache.alloca_h.result = true
+cache.alloca_h.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/alloca_h && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/alloca_h" "+ cd /home/ilya/QtWS/cg_3/config.tests/alloca_h && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o alloca_h main.o      "
+cache.sse3._KEYS_ = result msgs
+cache.sse3.result = true
+cache.sse3.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=sse3 /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -msse3 -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_SSE3 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.ssse3._KEYS_ = result msgs
+cache.ssse3.result = true
+cache.ssse3.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=ssse3 /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mssse3 -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_SSSE3 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.sse4_1._KEYS_ = result msgs
+cache.sse4_1.result = true
+cache.sse4_1.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=sse4_1 /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -msse4.1 -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_SSE4_1 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.sse4_2._KEYS_ = result msgs
+cache.sse4_2.result = true
+cache.sse4_2.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=sse4_2 /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -msse4.2 -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_SSE4_2 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx._KEYS_ = result msgs
+cache.avx.result = true
+cache.avx.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx2._KEYS_ = result msgs
+cache.avx2.result = true
+cache.avx2.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx2 /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx2 -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX2 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512f._KEYS_ = result msgs
+cache.avx512f.result = true
+cache.avx512f.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512f /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512f -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512F -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512bw._KEYS_ = result msgs
+cache.avx512bw.result = true
+cache.avx512bw.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512bw /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512bw -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512BW -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512cd._KEYS_ = result msgs
+cache.avx512cd.result = true
+cache.avx512cd.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512cd /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512cd -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512CD -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512dq._KEYS_ = result msgs
+cache.avx512dq.result = true
+cache.avx512dq.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512dq /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512dq -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512DQ -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512er._KEYS_ = result msgs
+cache.avx512er.result = true
+cache.avx512er.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512er /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512er -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512ER -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512ifma._KEYS_ = result msgs
+cache.avx512ifma.result = true
+cache.avx512ifma.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512ifma /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512ifma -mavx512ifma -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512IFMA -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512pf._KEYS_ = result msgs
+cache.avx512pf.result = true
+cache.avx512pf.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512pf /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512pf -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512PF -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512vbmi._KEYS_ = result msgs
+cache.avx512vbmi.result = true
+cache.avx512vbmi.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512vbmi /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512vbmi -mavx512vbmi -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512VBMI -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.avx512vl._KEYS_ = result msgs
+cache.avx512vl.result = true
+cache.avx512vl.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=avx512vl /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mavx512vl -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_AVX512VL -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.cxx14._KEYS_ = result msgs
+cache.cxx14.result = true
+cache.cxx14.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx14 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/cxx14" "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx14 && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -std=gnu++1y -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o cxx14 main.o      "
+cache.cxx17._KEYS_ = result msgs
+cache.cxx17.result = true
+cache.cxx17.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx17 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/cxx17" "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx17 && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -std=gnu++1z -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o cxx17 main.o      "
+cache.c99._KEYS_ = result msgs
+cache.c99.result = true
+cache.c99.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/c99 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/c99" "+ cd /home/ilya/QtWS/cg_3/config.tests/c99 && MAKEFLAGS= /usr/bin/make" "> gcc -c -pipe -O2 -std=gnu99 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.c" "> g++ -Wl,-O1 -o c99 main.o      "
+cache.c11._KEYS_ = result msgs
+cache.c11.result = true
+cache.c11.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/c11 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/c11" "+ cd /home/ilya/QtWS/cg_3/config.tests/c11 && MAKEFLAGS= /usr/bin/make" "> gcc -c -pipe -O2 -std=gnu11 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.c" "> g++ -Wl,-O1 -o c11 main.o      "
+cache.pkg-config._KEYS_ = result msgs pkgConfig
+cache.pkg-config.result = true
+cache.pkg-config.msgs = "Found pkg-config from path: /usr/bin/pkg-config"
+cache.pkg-config.pkgConfig = /usr/bin/pkg-config
+cache.dbus._KEYS_ = result msgs
+cache.dbus.result = false
+cache.dbus.msgs = "Trying source 0 (type pkgConfig) of library dbus ..." "+ /usr/bin/pkg-config --exists --silence-errors dbus-1 \'>=\' 1.2" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library dbus ..." "  => source failed condition \'config.win32\'." "Trying source 2 (type inline) of library dbus ..." "dbus/dbus.h not found in [] and global paths." "  => source produced no result."
+cache.libdl._KEYS_ = result msgs source sources.1.libs sources.1.includedir sources.1.cflags sources.1.version sources.1.export
+cache.libdl.result = true
+cache.libdl.msgs = "Trying source 0 (type inline) of library libdl ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/libdl && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += libdl\' \'QMAKE_LIBS_LIBDL = \' /home/ilya/QtWS/cg_3/config.tests/libdl" "+ cd /home/ilya/QtWS/cg_3/config.tests/libdl && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o libdl main.o      " "> /usr/bin/ld: main.o: в функции «main»:" "> main.cpp:(.text.startup+0xd): неопределённая ссылка на «dlopen»" "> /usr/bin/ld: main.cpp:(.text.startup+0x15): неопределённая ссылка на «dlclose»" "> /usr/bin/ld: main.cpp:(.text.startup+0x1e): неопределённая ссылка на «dlsym»" "> /usr/bin/ld: main.cpp:(.text.startup+0x23): неопределённая ссылка на «dlerror»" "> collect2: error: ld returned 1 exit status" "> make: *** [Makefile:67: libdl] Ошибка 1" " => source failed verification." "Trying source 1 (type inline) of library libdl ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/libdl && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += libdl\' \'QMAKE_LIBS_LIBDL = -ldl\' /home/ilya/QtWS/cg_3/config.tests/libdl" "+ cd /home/ilya/QtWS/cg_3/config.tests/libdl && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o libdl main.o   -ldl   " " => source accepted."
+cache.libdl.source = 1
+cache.libdl.sources.1.libs = -ldl
+cache.libdl.sources.1.includedir = 
+cache.libdl.sources.1.cflags = 
+cache.libdl.sources.1.version = 
+cache.libdl.sources.1.export = 
+cache.enable_new_dtags._KEYS_ = result msgs
+cache.enable_new_dtags.result = true
+cache.enable_new_dtags.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests && g++ -pipe -Wl,--enable-new-dtags -o conftest-out conftest.cpp"
+cache.f16c._KEYS_ = result msgs
+cache.f16c.result = true
+cache.f16c.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=f16c /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mf16c -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_F16C -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.gc_binaries._KEYS_ = result msgs
+cache.gc_binaries.result = true
+cache.gc_binaries.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/gc_binaries && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/gc_binaries" "+ cd /home/ilya/QtWS/cg_3/config.tests/gc_binaries && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o gc_binaries main.o      "
+cache.host_dbus._KEYS_ = result msgs source sources.1.libs sources.1.includedir sources.1.cflags sources.1.version sources.1.export
+cache.host_dbus.result = true
+cache.host_dbus.msgs = "Trying source 0 (type pkgConfig) of library host_dbus ..." "+ /usr/bin/pkg-config --exists --silence-errors dbus-1 \'>=\' 1.2" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library host_dbus ..." " => source accepted."
+cache.host_dbus.source = 1
+cache.host_dbus.sources.1.libs = 
+cache.host_dbus.sources.1.includedir = 
+cache.host_dbus.sources.1.cflags = 
+cache.host_dbus.sources.1.version = 
+cache.host_dbus.sources.1.export = 
+cache.intelcet._KEYS_ = result msgs
+cache.intelcet.result = true
+cache.intelcet.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/intelcet && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/intelcet" "+ cd /home/ilya/QtWS/cg_3/config.tests/intelcet && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o intelcet main.o      "
+cache.libudev._KEYS_ = result msgs
+cache.libudev.result = false
+cache.libudev.msgs = "Trying source 0 (type pkgConfig) of library libudev ..." "+ /usr/bin/pkg-config --exists --silence-errors libudev" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library libudev ..." "libudev.h not found in [] and global paths." "  => source produced no result."
+cache.posix_fallocate._KEYS_ = result msgs
+cache.posix_fallocate.result = true
+cache.posix_fallocate.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/posix_fallocate && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/posix_fallocate" "+ cd /home/ilya/QtWS/cg_3/config.tests/posix_fallocate && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o posix_fallocate main.o      "
+cache.precompile_header._KEYS_ = result msgs
+cache.precompile_header.result = true
+cache.precompile_header.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/precompile_header && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/precompile_header" "+ cd /home/ilya/QtWS/cg_3/config.tests/precompile_header && MAKEFLAGS= /usr/bin/make" "> g++ -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -x c++-header -c header.h -o .pch/precompile_header.gch/c++" "> g++ -c -include .pch/precompile_header -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o precompile_header main.o      "
+cache.rdrnd._KEYS_ = result msgs
+cache.rdrnd.result = true
+cache.rdrnd.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=rdrnd /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mrdrnd -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_RDRND -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.rdseed._KEYS_ = result msgs
+cache.rdseed.result = true
+cache.rdseed.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=rdseed /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -mrdseed -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_RDSEED -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.reduce_exports._KEYS_ = result msgs
+cache.reduce_exports.result = true
+cache.reduce_exports.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/reduce_exports && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/reduce_exports" "+ cd /home/ilya/QtWS/cg_3/config.tests/reduce_exports && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -fvisibility=hidden -fvisibility-inlines-hidden -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> rm -f libreduce_exports.so.1.0.0 libreduce_exports.so libreduce_exports.so.1 libreduce_exports.so.1.0" "> g++ -Wl,-O1 -shared -Wl,-soname,libreduce_exports.so.1 -o libreduce_exports.so.1.0.0 main.o      " "> ln -s libreduce_exports.so.1.0.0 libreduce_exports.so" "> ln -s libreduce_exports.so.1.0.0 libreduce_exports.so.1" "> ln -s libreduce_exports.so.1.0.0 libreduce_exports.so.1.0"
+cache.reduce_relocations._KEYS_ = result msgs
+cache.reduce_relocations.result = true
+cache.reduce_relocations.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/reduce_relocations && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/reduce_relocations" "+ cd /home/ilya/QtWS/cg_3/config.tests/reduce_relocations && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> rm -f libreduce_relocations.so.1.0.0 libreduce_relocations.so libreduce_relocations.so.1 libreduce_relocations.so.1.0" "> g++ -Wl,-O1 -shared -Wl,-Bsymbolic-functions -Wl,-soname,libreduce_relocations.so.1 -o libreduce_relocations.so.1.0.0 main.o      " "> ln -s libreduce_relocations.so.1.0.0 libreduce_relocations.so" "> ln -s libreduce_relocations.so.1.0.0 libreduce_relocations.so.1" "> ln -s libreduce_relocations.so.1.0.0 libreduce_relocations.so.1.0"
+cache.shani._KEYS_ = result msgs
+cache.shani.result = true
+cache.shani.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" CONFIG+=add_cflags DEFINES+=NO_ATTRIBUTE SIMD=shani /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -msha -O2 -w -fPIC -DNO_ATTRIBUTE -DQT_COMPILER_SUPPORTS_SHANI -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.signaling_nan._KEYS_ = result msgs
+cache.signaling_nan.result = true
+cache.signaling_nan.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/signaling_nan && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/signaling_nan" "+ cd /home/ilya/QtWS/cg_3/config.tests/signaling_nan && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o signaling_nan main.o      "
+cache.stl._KEYS_ = result msgs
+cache.stl.result = true
+cache.stl.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/stl && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/stl" "+ cd /home/ilya/QtWS/cg_3/config.tests/stl && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/stl -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o stltest.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/stl/stltest.cpp" "> g++ -Wl,-O1 -o stl stltest.o      "
+cache.zlib._KEYS_ = result msgs source sources.2.libs sources.2.includedir sources.2.cflags sources.2.version sources.2.export
+cache.zlib.result = true
+cache.zlib.msgs = "Trying source 0 (type inline) of library zlib ..." "  => source failed condition \'config.msvc\'." "Trying source 1 (type inline) of library zlib ..." "  => source failed condition \'config.msvc\'." "Trying source 2 (type inline) of library zlib ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/zlib && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += zlib\' \'QMAKE_LIBS_ZLIB = -lz\' /home/ilya/QtWS/cg_3/config.tests/zlib" "+ cd /home/ilya/QtWS/cg_3/config.tests/zlib && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o zlib main.o   -lz   " " => source accepted."
+cache.zlib.source = 2
+cache.zlib.sources.2.libs = -lz
+cache.zlib.sources.2.includedir = 
+cache.zlib.sources.2.cflags = 
+cache.zlib.sources.2.version = 
+cache.zlib.sources.2.export = 
+cache.x86SimdAlways._KEYS_ = result msgs
+cache.x86SimdAlways.result = true
+cache.x86SimdAlways.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'SIMD=aesni avx avx2 avx512bw avx512cd avx512dq avx512er avx512f avx512ifma avx512pf avx512vbmi avx512vl f16c rdrnd rdseed shani sse2 sse3 sse4_1 sse4_2 ssse3\' /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd" "+ cd /home/ilya/QtWS/cg_3/config.tests/x86_simd && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -O2 -w -fPIC -DQT_COMPILER_SUPPORTS_AESNI -DQT_COMPILER_SUPPORTS_AVX -DQT_COMPILER_SUPPORTS_AVX2 -DQT_COMPILER_SUPPORTS_AVX512BW -DQT_COMPILER_SUPPORTS_AVX512CD -DQT_COMPILER_SUPPORTS_AVX512DQ -DQT_COMPILER_SUPPORTS_AVX512ER -DQT_COMPILER_SUPPORTS_AVX512F -DQT_COMPILER_SUPPORTS_AVX512IFMA -DQT_COMPILER_SUPPORTS_AVX512PF -DQT_COMPILER_SUPPORTS_AVX512VBMI -DQT_COMPILER_SUPPORTS_AVX512VL -DQT_COMPILER_SUPPORTS_F16C -DQT_COMPILER_SUPPORTS_RDRND -DQT_COMPILER_SUPPORTS_RDSEED -DQT_COMPILER_SUPPORTS_SHANI -DQT_COMPILER_SUPPORTS_SSE2 -DQT_COMPILER_SUPPORTS_SSE3 -DQT_COMPILER_SUPPORTS_SSE4_1 -DQT_COMPILER_SUPPORTS_SSE4_2 -DQT_COMPILER_SUPPORTS_SSSE3 -I/home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtbase/config.tests/x86_simd/main.cpp" "> g++ -Wl,-O1 -o x86_simd main.o      "
+cache.zstd._KEYS_ = result msgs
+cache.zstd.result = false
+cache.zstd.msgs = "Trying source 0 (type pkgConfig) of library zstd ..." "+ /usr/bin/pkg-config --exists --silence-errors libzstd \'>=\' 1.3" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library zstd ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/zstd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += zstd\' \'QMAKE_LIBS_ZSTD = -lzstd\' /home/ilya/QtWS/cg_3/config.tests/zstd" "+ cd /home/ilya/QtWS/cg_3/config.tests/zstd && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:2:10: fatal error: zstd.h: Нет такого файла или каталога" ">     2 | $${LITERAL_HASH}include <zstd.h>" ">       |          ^~~~~~~~" "> compilation terminated." "> make: *** [Makefile:167: main.o] Ошибка 1" " => source failed verification."
+cache.librt._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.librt.result = true
+cache.librt.msgs = "Trying source 0 (type inline) of library librt ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/librt && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += librt\' \'QMAKE_LIBS_LIBRT = \' /home/ilya/QtWS/cg_3/config.tests/librt" "+ cd /home/ilya/QtWS/cg_3/config.tests/librt && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o librt main.o      " " => source accepted."
+cache.librt.source = 0
+cache.librt.sources.0.libs = 
+cache.librt.sources.0.includedir = 
+cache.librt.sources.0.cflags = 
+cache.librt.sources.0.version = 
+cache.librt.sources.0.export = 
+cache.clock-monotonic._KEYS_ = result msgs
+cache.clock-monotonic.result = true
+cache.clock-monotonic.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/clock-monotonic && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += librt\' \'QMAKE_LIBS_LIBRT = \' /home/ilya/QtWS/cg_3/config.tests/clock-monotonic" "+ cd /home/ilya/QtWS/cg_3/config.tests/clock-monotonic && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o clock-monotonic main.o      "
+cache.cxx11_future._KEYS_ = result msgs
+cache.cxx11_future.result = true
+cache.cxx11_future.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx11_future && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/cxx11_future" "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx11_future && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o cxx11_future main.o   -lpthread   "
+cache.eventfd._KEYS_ = result msgs
+cache.eventfd.result = true
+cache.eventfd.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/eventfd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/eventfd" "+ cd /home/ilya/QtWS/cg_3/config.tests/eventfd && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o eventfd main.o      "
+cache.futimens._KEYS_ = result msgs
+cache.futimens.result = true
+cache.futimens.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/futimens && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/futimens" "+ cd /home/ilya/QtWS/cg_3/config.tests/futimens && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -Wall -Wextra -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o futimens main.o      "
+cache.getauxval._KEYS_ = result msgs
+cache.getauxval.result = true
+cache.getauxval.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/getauxval && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/getauxval" "+ cd /home/ilya/QtWS/cg_3/config.tests/getauxval && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o getauxval main.o      "
+cache.getentropy._KEYS_ = result msgs
+cache.getentropy.result = true
+cache.getentropy.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/getentropy && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/getentropy" "+ cd /home/ilya/QtWS/cg_3/config.tests/getentropy && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o getentropy main.o      "
+cache.glib._KEYS_ = result msgs
+cache.glib.result = false
+cache.glib.msgs = "Trying source 0 (type pkgConfig) of library glib ..." "+ /usr/bin/pkg-config --exists --silence-errors glib-2.0 gthread-2.0" "pkg-config did not find package." "  => source produced no result."
+cache.glibc._KEYS_ = result msgs
+cache.glibc.result = true
+cache.glibc.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/glibc && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/glibc" "+ cd /home/ilya/QtWS/cg_3/config.tests/glibc && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o glibc main.o      "
+cache.posix_iconv._KEYS_ = result msgs source sources.1.libs sources.1.includedir sources.1.cflags sources.1.version sources.1.export
+cache.posix_iconv.result = true
+cache.posix_iconv.msgs = "Trying source 0 (type inline) of library posix_iconv ..." "  => source failed condition \'config.openbsd || config.haiku\'." "Trying source 1 (type inline) of library posix_iconv ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/posix_iconv && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += posix_iconv\' \'QMAKE_LIBS_POSIX_ICONV = \' /home/ilya/QtWS/cg_3/config.tests/posix_iconv" "+ cd /home/ilya/QtWS/cg_3/config.tests/posix_iconv && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o posix_iconv main.o      " " => source accepted."
+cache.posix_iconv.source = 1
+cache.posix_iconv.sources.1.libs = 
+cache.posix_iconv.sources.1.includedir = 
+cache.posix_iconv.sources.1.cflags = 
+cache.posix_iconv.sources.1.version = 
+cache.posix_iconv.sources.1.export = 
+cache.icu._KEYS_ = result msgs source sources.2.libs sources.2.includedir sources.2.cflags sources.2.version sources.2.export
+cache.icu.result = true
+cache.icu.msgs = "Trying source 0 (type inline) of library icu ..." "  => source failed condition \'config.win32 && !features.shared\'." "Trying source 1 (type inline) of library icu ..." "  => source failed condition \'config.win32 && features.shared\'." "Trying source 2 (type inline) of library icu ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/icu && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += icu\' \'QMAKE_LIBS_ICU = -licui18n -licuuc -licudata\' \'QMAKE_DEPENDS_ICU_CC = LIBDL\' \'QMAKE_DEPENDS_ICU_LD = LIBDL\' \'QMAKE_LIBS_LIBDL = -ldl\' /home/ilya/QtWS/cg_3/config.tests/icu" "+ cd /home/ilya/QtWS/cg_3/config.tests/icu && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o icu main.o   -licui18n -licuuc -licudata -ldl   " " => source accepted."
+cache.icu.source = 2
+cache.icu.sources.2.libs = -licui18n -licuuc -licudata
+cache.icu.sources.2.includedir = 
+cache.icu.sources.2.cflags = 
+cache.icu.sources.2.version = 
+cache.icu.sources.2.export = 
+cache.inotify._KEYS_ = result msgs
+cache.inotify.result = true
+cache.inotify.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/inotify && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/inotify" "+ cd /home/ilya/QtWS/cg_3/config.tests/inotify && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o inotify main.o      "
+cache.ipc_sysv._KEYS_ = result msgs
+cache.ipc_sysv.result = true
+cache.ipc_sysv.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/ipc_sysv && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/ipc_sysv" "+ cd /home/ilya/QtWS/cg_3/config.tests/ipc_sysv && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o ipc_sysv main.o      "
+cache.linkat._KEYS_ = result msgs
+cache.linkat.result = true
+cache.linkat.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/linkat && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/linkat" "+ cd /home/ilya/QtWS/cg_3/config.tests/linkat && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o linkat main.o      "
+cache.ppoll._KEYS_ = result msgs
+cache.ppoll.result = true
+cache.ppoll.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/ppoll && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/ppoll" "+ cd /home/ilya/QtWS/cg_3/config.tests/ppoll && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o ppoll main.o      "
+cache.pcre2._KEYS_ = result msgs
+cache.pcre2.result = false
+cache.pcre2.msgs = "Trying source 0 (type pkgConfig) of library pcre2 ..." "+ /usr/bin/pkg-config --exists --silence-errors libpcre2-16" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library pcre2 ..." "pcre2.h not found in [] and global paths." "  => source produced no result."
+cache.renameat2._KEYS_ = result msgs
+cache.renameat2.result = true
+cache.renameat2.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/renameat2 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/renameat2" "+ cd /home/ilya/QtWS/cg_3/config.tests/renameat2 && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o renameat2 main.o      "
+cache.slog2._KEYS_ = result msgs
+cache.slog2.result = false
+cache.slog2.msgs = "Trying source 0 (type inline) of library slog2 ..." "sys/slog2.h not found in [] and global paths." "  => source produced no result."
+cache.statx._KEYS_ = result msgs
+cache.statx.result = true
+cache.statx.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/statx && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/statx" "+ cd /home/ilya/QtWS/cg_3/config.tests/statx && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o statx main.o      "
+cache.libatomic._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.libatomic.result = true
+cache.libatomic.msgs = "Trying source 0 (type inline) of library libatomic ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/libatomic && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += libatomic\' \'QMAKE_LIBS_LIBATOMIC = \' /home/ilya/QtWS/cg_3/config.tests/libatomic" "+ cd /home/ilya/QtWS/cg_3/config.tests/libatomic && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -std=gnu++11 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o libatomic main.o      " " => source accepted."
+cache.libatomic.source = 0
+cache.libatomic.sources.0.libs = 
+cache.libatomic.sources.0.includedir = 
+cache.libatomic.sources.0.cflags = 
+cache.libatomic.sources.0.version = 
+cache.libatomic.sources.0.export = 
+cache.doubleconversion._KEYS_ = result msgs
+cache.doubleconversion.result = false
+cache.doubleconversion.msgs = "Trying source 0 (type inline) of library doubleconversion ..." "double-conversion/double-conversion.h not found in [] and global paths." "  => source produced no result."
+cache.cloexec._KEYS_ = result msgs
+cache.cloexec.result = true
+cache.cloexec.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/cloexec && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/cloexec" "+ cd /home/ilya/QtWS/cg_3/config.tests/cloexec && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o cloexec main.o      "
+cache.cxx11_random._KEYS_ = result msgs
+cache.cxx11_random.result = true
+cache.cxx11_random.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx11_random && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/cxx11_random" "+ cd /home/ilya/QtWS/cg_3/config.tests/cxx11_random && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o cxx11_random main.o      "
+cache.atomicfptr._KEYS_ = result msgs
+cache.atomicfptr.result = true
+cache.atomicfptr.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/atomicfptr && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/atomicfptr" "+ cd /home/ilya/QtWS/cg_3/config.tests/atomicfptr && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -std=gnu++11 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o atomicfptr main.o      "
+cache.openssl_headers._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.openssl_headers.result = true
+cache.openssl_headers.msgs = "Trying source 0 (type inline) of library openssl_headers ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/openssl_headers && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += openssl_headers\' \'QMAKE_LIBS_OPENSSL_HEADERS = \' /home/ilya/QtWS/cg_3/config.tests/openssl_headers" "+ cd /home/ilya/QtWS/cg_3/config.tests/openssl_headers && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o openssl_headers main.o      " " => source accepted."
+cache.openssl_headers.source = 0
+cache.openssl_headers.sources.0.libs = 
+cache.openssl_headers.sources.0.includedir = 
+cache.openssl_headers.sources.0.cflags = 
+cache.openssl_headers.sources.0.version = 
+cache.openssl_headers.sources.0.export = 
+cache.dtls._KEYS_ = result msgs
+cache.dtls.result = true
+cache.dtls.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/dtls && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += openssl_headers\' \'QMAKE_LIBS_OPENSSL_HEADERS = \' /home/ilya/QtWS/cg_3/config.tests/dtls" "+ cd /home/ilya/QtWS/cg_3/config.tests/dtls && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o dtls main.o      "
+cache.network._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.network.result = true
+cache.network.msgs = "Trying source 0 (type makeSpec) of library network ..." " => source accepted."
+cache.network.source = 0
+cache.network.sources.0.libs = 
+cache.network.sources.0.includedir = 
+cache.network.sources.0.cflags = 
+cache.network.sources.0.version = 
+cache.network.sources.0.export = 
+cache.getifaddrs._KEYS_ = result msgs
+cache.getifaddrs.result = true
+cache.getifaddrs.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/getifaddrs && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += network\' \'QMAKE_LIBS_NETWORK = \' /home/ilya/QtWS/cg_3/config.tests/getifaddrs" "+ cd /home/ilya/QtWS/cg_3/config.tests/getifaddrs && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o getifaddrs main.o      "
+cache.gssapi._KEYS_ = result msgs source sources.1.libs sources.1.includedir sources.1.cflags sources.1.version sources.1.export
+cache.gssapi.result = true
+cache.gssapi.msgs = "Trying source 0 (type inline) of library gssapi ..." "  => source failed condition \'config.darwin\'." "Trying source 1 (type pkgConfig) of library gssapi ..." "+ /usr/bin/pkg-config --exists --silence-errors krb5-gssapi" "+ /usr/bin/pkg-config --modversion krb5-gssapi" "> 1.17" "+ /usr/bin/pkg-config --libs-only-L krb5-gssapi" "> -L/usr/lib/x86_64-linux-gnu/mit-krb5" "+ /usr/bin/pkg-config --libs-only-l krb5-gssapi" "> -lgssapi_krb5" "+ /usr/bin/pkg-config --cflags krb5-gssapi" "> -isystem /usr/include/mit-krb5" "Note: Dropped compiler flags \'-isystem /usr/include/mit-krb5\'." "+ cd /home/ilya/QtWS/cg_3/config.tests/gssapi && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += gssapi\' \'QMAKE_LIBS_GSSAPI = -L/usr/lib/x86_64-linux-gnu/mit-krb5 -lgssapi_krb5\' /home/ilya/QtWS/cg_3/config.tests/gssapi" "+ cd /home/ilya/QtWS/cg_3/config.tests/gssapi && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o gssapi main.o   -L/usr/lib/x86_64-linux-gnu/mit-krb5 -lgssapi_krb5   " " => source accepted."
+cache.gssapi.source = 1
+cache.gssapi.sources.1.libs = -L/usr/lib/x86_64-linux-gnu/mit-krb5 -lgssapi_krb5
+cache.gssapi.sources.1.includedir = 
+cache.gssapi.sources.1.cflags = "-isystem /usr/include/mit-krb5"
+cache.gssapi.sources.1.version = 1.17
+cache.gssapi.sources.1.export = 
+cache.ipv6ifname._KEYS_ = result msgs
+cache.ipv6ifname.result = true
+cache.ipv6ifname.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/ipv6ifname && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += network\' \'QMAKE_LIBS_NETWORK = \' /home/ilya/QtWS/cg_3/config.tests/ipv6ifname" "+ cd /home/ilya/QtWS/cg_3/config.tests/ipv6ifname && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o ipv6ifname main.o      "
+cache.linux-netlink._KEYS_ = result msgs
+cache.linux-netlink.result = true
+cache.linux-netlink.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/linux-netlink && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/linux-netlink" "+ cd /home/ilya/QtWS/cg_3/config.tests/linux-netlink && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o linux-netlink main.o      "
+cache.ocsp._KEYS_ = result msgs
+cache.ocsp.result = true
+cache.ocsp.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/ocsp && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += openssl_headers\' \'QMAKE_LIBS_OPENSSL_HEADERS = \' /home/ilya/QtWS/cg_3/config.tests/ocsp" "+ cd /home/ilya/QtWS/cg_3/config.tests/ocsp && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o ocsp main.o      "
+cache.xcb._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.xcb.result = true
+cache.xcb.msgs = "Trying source 0 (type pkgConfig) of library xcb ..." "+ /usr/bin/pkg-config --exists --silence-errors xcb \'>=\' 1.11" "+ /usr/bin/pkg-config --modversion xcb \'>=\' 1.11" "> 1.14" "+ /usr/bin/pkg-config --libs-only-L xcb \'>=\' 1.11" "+ /usr/bin/pkg-config --libs-only-l xcb \'>=\' 1.11" "> -lxcb" "+ /usr/bin/pkg-config --cflags xcb \'>=\' 1.11" "+ cd /home/ilya/QtWS/cg_3/config.tests/xcb && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += xcb\' \'QMAKE_LIBS_XCB = -lxcb\' /home/ilya/QtWS/cg_3/config.tests/xcb" "+ cd /home/ilya/QtWS/cg_3/config.tests/xcb && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o xcb main.o   -lxcb   " " => source accepted."
+cache.xcb.source = 0
+cache.xcb.sources.0.libs = -lxcb
+cache.xcb.sources.0.includedir = 
+cache.xcb.sources.0.cflags = 
+cache.xcb.sources.0.version = 1.14
+cache.xcb.sources.0.export = 
+cache.xcb_icccm._KEYS_ = result msgs
+cache.xcb_icccm.result = false
+cache.xcb_icccm.msgs = "Trying source 0 (type pkgConfig) of library xcb_icccm ..." "+ /usr/bin/pkg-config --exists --silence-errors xcb-icccm \'>=\' 0.3.9" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library xcb_icccm ..." "xcb/xcb_icccm.h not found in [] and global paths." "  => source produced no result."
+cache.opengl._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.opengl.result = true
+cache.opengl.msgs = "Trying source 0 (type pkgConfig) of library opengl ..." "+ /usr/bin/pkg-config --exists --silence-errors gl" "+ /usr/bin/pkg-config --modversion gl" "> 1.2" "+ /usr/bin/pkg-config --libs-only-L gl" "+ /usr/bin/pkg-config --libs-only-l gl" "> -lGL" "+ /usr/bin/pkg-config --cflags gl" "header entry \'config.qtbase_gui.libraries.opengl.headers.0\' passed condition." "header entry \'config.qtbase_gui.libraries.opengl.headers.0\' passed condition." "+ cd /home/ilya/QtWS/cg_3/config.tests/opengl && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += opengl\' \'QMAKE_LIBS_OPENGL = -lGL\' /home/ilya/QtWS/cg_3/config.tests/opengl" "+ cd /home/ilya/QtWS/cg_3/config.tests/opengl && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o opengl main.o   -lGL   " " => source accepted."
+cache.opengl.source = 0
+cache.opengl.sources.0.libs = -lGL
+cache.opengl.sources.0.includedir = 
+cache.opengl.sources.0.cflags = 
+cache.opengl.sources.0.version = 1.2
+cache.opengl.sources.0.export = 
+cache.drm._KEYS_ = result msgs
+cache.drm.result = false
+cache.drm.msgs = "Trying source 0 (type pkgConfig) of library drm ..." "+ /usr/bin/pkg-config --exists --silence-errors libdrm" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library drm ..." "xf86drmMode.h not found in [] and global paths." "xf86drm.h not found in [] and global paths." "  => source produced no result." "Trying source 2 (type inline) of library drm ..." "  => source failed condition \'config.integrity\'."
+cache.egl._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.egl.result = true
+cache.egl.msgs = "Trying source 0 (type pkgConfig) of library egl ..." "+ /usr/bin/pkg-config --exists --silence-errors egl" "+ /usr/bin/pkg-config --modversion egl" "> 1.5" "+ /usr/bin/pkg-config --libs-only-L egl" "+ /usr/bin/pkg-config --libs-only-l egl" "> -lEGL" "+ /usr/bin/pkg-config --cflags egl" "+ cd /home/ilya/QtWS/cg_3/config.tests/egl && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += egl\' \'QMAKE_LIBS_EGL = -lEGL\' /home/ilya/QtWS/cg_3/config.tests/egl" "+ cd /home/ilya/QtWS/cg_3/config.tests/egl && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o egl main.o   -lEGL   " " => source accepted."
+cache.egl.source = 0
+cache.egl.sources.0.libs = -lEGL
+cache.egl.sources.0.includedir = 
+cache.egl.sources.0.cflags = 
+cache.egl.sources.0.version = 1.5
+cache.egl.sources.0.export = 
+cache.xlib._KEYS_ = result msgs
+cache.xlib.result = false
+cache.xlib.msgs = "Trying source 0 (type makeSpec) of library xlib ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/xlib && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += xlib\' \'QMAKE_LIBS_XLIB = -lXext -lX11 -lm\' /home/ilya/QtWS/cg_3/config.tests/xlib" "+ cd /home/ilya/QtWS/cg_3/config.tests/xlib && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o xlib main.o   -lXext -lX11 -lm   " "> /usr/bin/ld: невозможно найти -lXext" "> collect2: error: ld returned 1 exit status" "> make: *** [Makefile:67: xlib] Ошибка 1" " => source failed verification."
+cache.bcm_host._KEYS_ = result msgs
+cache.bcm_host.result = false
+cache.bcm_host.msgs = "Trying source 0 (type pkgConfig) of library bcm_host ..." "+ /usr/bin/pkg-config --exists --silence-errors bcm_host" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type makeSpec) of library bcm_host ..." "bcm_host.h not found in [] and global paths." "  => source produced no result."
+cache.egl-egldevice._KEYS_ = result msgs
+cache.egl-egldevice.result = true
+cache.egl-egldevice.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-egldevice && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += egl\' \'QMAKE_LIBS_EGL = -lEGL\' /home/ilya/QtWS/cg_3/config.tests/egl-egldevice" "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-egldevice && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o egl-egldevice main.o   -lEGL   "
+cache.gbm._KEYS_ = result msgs
+cache.gbm.result = false
+cache.gbm.msgs = "Trying source 0 (type pkgConfig) of library gbm ..." "+ /usr/bin/pkg-config --exists --silence-errors gbm" "pkg-config did not find package." "  => source produced no result."
+cache.egl-mali._KEYS_ = result msgs
+cache.egl-mali.result = false
+cache.egl-mali.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-mali && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += egl\' \'QMAKE_LIBS_EGL = -lEGL\' /home/ilya/QtWS/cg_3/config.tests/egl-mali" "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-mali && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:2:10: fatal error: EGL/fbdev_window.h: Нет такого файла или каталога" ">     2 | $${LITERAL_HASH}include <EGL/fbdev_window.h>" ">       |          ^~~~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1"
+cache.egl-mali-2._KEYS_ = result msgs
+cache.egl-mali-2.result = false
+cache.egl-mali-2.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-mali-2 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += egl\' \'QMAKE_LIBS_EGL = -lEGL\' /home/ilya/QtWS/cg_3/config.tests/egl-mali-2" "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-mali-2 && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp: In function ‘int main(int, char**)’:" "> main.cpp:8:5: error: ‘mali_native_window’ was not declared in this scope" ">     8 |     mali_native_window *w = 0;" ">       |     ^~~~~~~~~~~~~~~~~~" "> main.cpp:8:25: error: ‘w’ was not declared in this scope" ">     8 |     mali_native_window *w = 0;" ">       |                         ^" "> make: *** [Makefile:169: main.o] Ошибка 1"
+cache.egl-viv._KEYS_ = result msgs
+cache.egl-viv.result = false
+cache.egl-viv.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-viv && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += egl\' \'QMAKE_LIBS_EGL = -lEGL\' /home/ilya/QtWS/cg_3/config.tests/egl-viv" "+ cd /home/ilya/QtWS/cg_3/config.tests/egl-viv && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC -DEGL_API_FB=1 -DLINUX=1 -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:3:10: fatal error: EGL/eglvivante.h: Нет такого файла или каталога" ">     3 | $${LITERAL_HASH}include <EGL/eglvivante.h>" ">       |          ^~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1"
+cache.evdev._KEYS_ = result msgs
+cache.evdev.result = true
+cache.evdev.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/evdev && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/evdev" "+ cd /home/ilya/QtWS/cg_3/config.tests/evdev && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o evdev main.o      "
+cache.freetype._KEYS_ = result msgs
+cache.freetype.result = false
+cache.freetype.msgs = "Trying source 0 (type pkgConfig) of library freetype ..." "+ /usr/bin/pkg-config --exists --silence-errors freetype2" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type freetype) of library freetype ..." "ft2build.h not found in [] and global paths." "  => source produced no result." "Trying source 2 (type inline) of library freetype ..." "  => source failed condition \'config.wasm\'." "Trying source 3 (type inline) of library freetype ..." "ft2build.h not found in [] and global paths." "  => source produced no result."
+cache.linuxfb._KEYS_ = result msgs
+cache.linuxfb.result = true
+cache.linuxfb.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/linuxfb && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/linuxfb" "+ cd /home/ilya/QtWS/cg_3/config.tests/linuxfb && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o linuxfb main.o      "
+cache.mtdev._KEYS_ = result msgs
+cache.mtdev.result = false
+cache.mtdev.msgs = "Trying source 0 (type pkgConfig) of library mtdev ..." "+ /usr/bin/pkg-config --exists --silence-errors mtdev" "pkg-config did not find package." "  => source produced no result."
+cache.openvg._KEYS_ = result msgs
+cache.openvg.result = false
+cache.openvg.msgs = "Trying source 0 (type pkgConfig) of library openvg ..." "+ /usr/bin/pkg-config --exists --silence-errors vg" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type makeSpec) of library openvg ..." "VG/openvg.h not found in [] and global paths." "  => source produced no result."
+cache.qpa_default_platform._KEYS_ = result msgs value plugin name
+cache.qpa_default_platform.result = true
+cache.qpa_default_platform.msgs = 
+cache.qpa_default_platform.value = xcb
+cache.qpa_default_platform.plugin = qxcb
+cache.qpa_default_platform.name = \"xcb\"
+cache.harfbuzz._KEYS_ = result msgs
+cache.harfbuzz.result = false
+cache.harfbuzz.msgs = "Trying source 0 (type inline) of library harfbuzz ..." "harfbuzz/hb.h not found in [] and global paths." "  => source produced no result."
+cache.libjpeg._KEYS_ = result msgs
+cache.libjpeg.result = false
+cache.libjpeg.msgs = "Trying source 0 (type pkgConfig) of library libjpeg ..." "+ /usr/bin/pkg-config --exists --silence-errors libjpeg" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library libjpeg ..." "  => source failed condition \'config.msvc\'." "Trying source 2 (type inline) of library libjpeg ..." "jpeglib.h not found in [] and global paths." "  => source produced no result."
+cache.libpng._KEYS_ = result msgs
+cache.libpng.result = false
+cache.libpng.msgs = "Trying source 0 (type pkgConfig) of library libpng ..." "+ /usr/bin/pkg-config --exists --silence-errors libpng" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library libpng ..." "  => source failed condition \'config.msvc\'." "Trying source 2 (type inline) of library libpng ..." "  => source failed condition \'config.msvc\'." "Trying source 3 (type inline) of library libpng ..." "png.h not found in [] and global paths." "  => source produced no result." "Trying source 4 (type inline) of library libpng ..." "png.h not found in [] and global paths." "  => source produced no result." "Trying source 5 (type inline) of library libpng ..." "  => source failed condition \'config.wasm\'."
+cache.libmd4c._KEYS_ = result msgs
+cache.libmd4c.result = false
+cache.libmd4c.msgs = "Trying source 0 (type pkgConfig) of library libmd4c ..." "+ /usr/bin/pkg-config --exists --silence-errors md4c" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library libmd4c ..." "md4c.h not found in [] and global paths." "  => source produced no result."
+cache.tslib._KEYS_ = result msgs
+cache.tslib.result = false
+cache.tslib.msgs = "Trying source 0 (type inline) of library tslib ..." "tslib.h not found in [] and global paths." "  => source produced no result."
+cache.vulkan._KEYS_ = result msgs
+cache.vulkan.result = false
+cache.vulkan.msgs = "Trying source 0 (type pkgConfig) of library vulkan ..." "+ /usr/bin/pkg-config --exists --silence-errors vulkan" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type makeSpec) of library vulkan ..." "vulkan/vulkan.h not found in [] and global paths." "  => source produced no result."
+cache.xkbcommon._KEYS_ = result msgs
+cache.xkbcommon.result = false
+cache.xkbcommon.msgs = "Trying source 0 (type pkgConfig) of library xkbcommon ..." "+ /usr/bin/pkg-config --exists --silence-errors xkbcommon \'>=\' 0.5.0" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library xkbcommon ..." "xkbcommon/xkbcommon.h not found in [] and global paths." "  => source produced no result."
+cache.cups._KEYS_ = result msgs
+cache.cups.result = false
+cache.cups.msgs = "Trying source 0 (type inline) of library cups ..." "cups/cups.h not found in [] and global paths." "  => source produced no result."
+cache.db2._KEYS_ = result msgs
+cache.db2.result = false
+cache.db2.msgs = "Trying source 0 (type inline) of library db2 ..." "  => source failed condition \'config.win32\'." "Trying source 1 (type inline) of library db2 ..." "sqlcli.h not found in [] and global paths." "sqlcli1.h not found in [] and global paths." "  => source produced no result."
+cache.ibase._KEYS_ = result msgs
+cache.ibase.result = false
+cache.ibase.msgs = "Trying source 0 (type inline) of library ibase ..." "  => source failed condition \'config.win32\'." "Trying source 1 (type inline) of library ibase ..." "ibase.h not found in [] and global paths." "  => source produced no result."
+cache.mysql._KEYS_ = result msgs
+cache.mysql.result = false
+cache.mysql.msgs = "Trying source 0 (type mysqlConfig) of library mysql ..." "mysql_config not found." "  => source produced no result." "Trying source 1 (type mysqlConfig) of library mysql ..." "mysql_config not found." "  => source produced no result." "Trying source 2 (type mysqlConfig) of library mysql ..." "mysql_config not found." "  => source produced no result." "Trying source 3 (type mysqlConfig) of library mysql ..." "mysql_config not found." "  => source produced no result." "Trying source 4 (type inline) of library mysql ..." "mysql.h not found in [] and global paths." "  => source produced no result." "Trying source 5 (type inline) of library mysql ..." "  => source failed condition \'config.win32\'." "Trying source 6 (type inline) of library mysql ..." "  => source failed condition \'config.win32\'." "Trying source 7 (type inline) of library mysql ..." "mysql.h not found in [] and global paths." "  => source produced no result." "Trying source 8 (type inline) of library mysql ..." "mysql.h not found in [] and global paths." "  => source produced no result."
+cache.oci._KEYS_ = result msgs
+cache.oci.result = false
+cache.oci.msgs = "Trying source 0 (type inline) of library oci ..." "  => source failed condition \'config.win32\'." "Trying source 1 (type inline) of library oci ..." "oci.h not found in [] and global paths." "  => source produced no result."
+cache.odbc._KEYS_ = result msgs
+cache.odbc.result = false
+cache.odbc.msgs = "Trying source 0 (type inline) of library odbc ..." "  => source failed condition \'config.win32\'." "Trying source 1 (type inline) of library odbc ..." "  => source failed condition \'config.darwin\'." "Trying source 2 (type inline) of library odbc ..." "sql.h not found in [] and global paths." "sqlext.h not found in [] and global paths." "  => source produced no result."
+cache.psql._KEYS_ = result msgs
+cache.psql.result = false
+cache.psql.msgs = "Trying source 0 (type pkgConfig) of library psql ..." "+ /usr/bin/pkg-config --exists --silence-errors libpq" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type psqlConfig) of library psql ..." "pg_config not found." "  => source produced no result." "Trying source 2 (type psqlEnv) of library psql ..." "  => source failed condition \'config.win32\'." "Trying source 3 (type psqlEnv) of library psql ..." "libpq-fe.h not found in [] and global paths." "  => source produced no result."
+cache.sqlite2._KEYS_ = result msgs
+cache.sqlite2.result = false
+cache.sqlite2.msgs = "Trying source 0 (type inline) of library sqlite2 ..." "sqlite.h not found in [] and global paths." "  => source produced no result."
+cache.tds._KEYS_ = result msgs
+cache.tds.result = false
+cache.tds.msgs = "Trying source 0 (type sybaseEnv) of library tds ..." "  => source failed condition \'config.win32\'." "Trying source 1 (type sybaseEnv) of library tds ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/tds && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += tds\' \'QMAKE_LIBS_TDS = -lsybdb\' /home/ilya/QtWS/cg_3/config.tests/tds" "+ cd /home/ilya/QtWS/cg_3/config.tests/tds && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:2:10: fatal error: sybfront.h: Нет такого файла или каталога" ">     2 | $${LITERAL_HASH}include <sybfront.h>" ">       |          ^~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.ntddmodm._KEYS_ = result msgs
+cache.ntddmodm.result = false
+cache.ntddmodm.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/ntddmodm && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/ntddmodm" "+ cd /home/ilya/QtWS/cg_3/config.tests/ntddmodm && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:2:10: fatal error: windows.h: Нет такого файла или каталога" ">     2 | $${LITERAL_HASH}include <windows.h>" ">       |          ^~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1"
+cache.socketcan._KEYS_ = result msgs
+cache.socketcan.result = true
+cache.socketcan.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/socketcan && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtserialbus/config.tests/socketcan" "+ cd /home/ilya/QtWS/cg_3/config.tests/socketcan && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtserialbus/config.tests/socketcan -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtserialbus/config.tests/socketcan/main.cpp" "> g++ -Wl,-O1 -o socketcan main.o      "
+cache.socketcan_fd._KEYS_ = result msgs
+cache.socketcan_fd.result = true
+cache.socketcan_fd.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/socketcan_fd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtserialbus/config.tests/socketcan_fd" "+ cd /home/ilya/QtWS/cg_3/config.tests/socketcan_fd && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtserialbus/config.tests/socketcan_fd -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtserialbus/config.tests/socketcan_fd/main.cpp" "> g++ -Wl,-O1 -o socketcan_fd main.o      "
+cache.jasper._KEYS_ = result msgs
+cache.jasper.result = false
+cache.jasper.msgs = "Trying source 0 (type pkgConfig) of library jasper ..." "+ /usr/bin/pkg-config --exists --silence-errors jasper" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library jasper ..." "jasper/jasper.h not found in [] and global paths." "  => source produced no result."
+cache.mng._KEYS_ = result msgs
+cache.mng.result = false
+cache.mng.msgs = "Trying source 0 (type pkgConfig) of library mng ..." "+ /usr/bin/pkg-config --exists --silence-errors libmng" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library mng ..." "libmng.h not found in [] and global paths." "  => source produced no result."
+cache.tiff._KEYS_ = result msgs
+cache.tiff.result = false
+cache.tiff.msgs = "Trying source 0 (type pkgConfig) of library tiff ..." "+ /usr/bin/pkg-config --exists --silence-errors libtiff-4" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library tiff ..." "tiffio.h not found in [] and global paths." "  => source produced no result."
+cache.webp._KEYS_ = result msgs
+cache.webp.result = false
+cache.webp.msgs = "Trying source 0 (type pkgConfig) of library webp ..." "+ /usr/bin/pkg-config --exists --silence-errors libwebp libwebpmux libwebpdemux" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library webp ..." "webp/decode.h not found in [] and global paths." "webp/encode.h not found in [] and global paths." "webp/demux.h not found in [] and global paths." "webp/mux.h not found in [] and global paths." "  => source produced no result."
+cache.pointer_64bit._KEYS_ = result msgs
+cache.pointer_64bit.result = true
+cache.pointer_64bit.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/pointer_64bit && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/pointer_64bit" "+ cd /home/ilya/QtWS/cg_3/config.tests/pointer_64bit && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o pointer_64bit main.o      "
+cache.qml-python._KEYS_ = result msgs location
+cache.qml-python.result = true
+cache.qml-python.msgs = 
+cache.qml-python.location = /usr/bin/python
+cache.d3d12._KEYS_ = result msgs
+cache.d3d12.result = false
+cache.d3d12.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/d3d12 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtdeclarative/config.tests/d3d12" "+ cd /home/ilya/QtWS/cg_3/config.tests/d3d12 && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtdeclarative/config.tests/d3d12 -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o d3d12.o /home/ilya/Qt/5.15.1/Src/qtdeclarative/config.tests/d3d12/d3d12.cpp" "> /home/ilya/Qt/5.15.1/Src/qtdeclarative/config.tests/d3d12/d3d12.cpp:40:10: fatal error: d3d12.h: Нет такого файла или каталога" ">    40 | $${LITERAL_HASH}include <d3d12.h>" ">       |          ^~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: d3d12.o] Ошибка 1"
+cache.quick3d-assimp._KEYS_ = result msgs
+cache.quick3d-assimp.result = false
+cache.quick3d-assimp.msgs = "Trying source 0 (type pkgConfig) of library quick3d-assimp ..." "+ /usr/bin/pkg-config --exists --silence-errors assimp \'>=\' 5.0.0" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library quick3d-assimp ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/assimp && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += quick3d-assimp\' \'QMAKE_LIBS_QUICK3D_ASSIMP = -lassimp\' /home/ilya/Qt/5.15.1/Src/qtquick3d/config.tests/assimp" "+ cd /home/ilya/QtWS/cg_3/config.tests/assimp && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtquick3d/config.tests/assimp -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtquick3d/config.tests/assimp/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qtquick3d/config.tests/assimp/main.cpp:29:10: fatal error: assimp/cimport.h: Нет такого файла или каталога" ">    29 | $${LITERAL_HASH}include <assimp/cimport.h>" ">       |          ^~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.sdl2._KEYS_ = result msgs
+cache.sdl2.result = false
+cache.sdl2.msgs = "Trying source 0 (type pkgConfig) of library sdl2 ..." "+ /usr/bin/pkg-config --exists --silence-errors sdl2" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library sdl2 ..." "  => source failed condition \'config.darwin\'." "Trying source 2 (type inline) of library sdl2 ..." "  => source failed condition \'config.win32\'." "Trying source 3 (type inline) of library sdl2 ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/sdl && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += sdl2\' \'QMAKE_LIBS_SDL2 = -lSDL2\' /home/ilya/Qt/5.15.1/Src/qtgamepad/config.tests/sdl" "+ cd /home/ilya/QtWS/cg_3/config.tests/sdl && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtgamepad/config.tests/sdl -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtgamepad/config.tests/sdl/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qtgamepad/config.tests/sdl/main.cpp:37:10: fatal error: SDL.h: Нет такого файла или каталога" ">    37 | $${LITERAL_HASH}include <SDL.h>" ">       |          ^~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.assimp._KEYS_ = result msgs
+cache.assimp.result = false
+cache.assimp.msgs = "Trying source 0 (type pkgConfig) of library assimp ..." "+ /usr/bin/pkg-config --exists --silence-errors assimp \'>\' 3.3.1" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library assimp ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/assimp && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += assimp\' \'QMAKE_LIBS_ASSIMP = -lassimp\' /home/ilya/Qt/5.15.1/Src/qt3d/config.tests/assimp" "+ cd /home/ilya/QtWS/cg_3/config.tests/assimp && MAKEFLAGS= /usr/bin/make clean && MAKEFLAGS= /usr/bin/make" "> rm -f main.o" "> rm -f *~ core *.core" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qt3d/config.tests/assimp -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qt3d/config.tests/assimp/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qt3d/config.tests/assimp/main.cpp:29:10: fatal error: assimp/cimport.h: Нет такого файла или каталога" ">    29 | $${LITERAL_HASH}include <assimp/cimport.h>" ">       |          ^~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.fbx._KEYS_ = result msgs
+cache.fbx.result = false
+cache.fbx.msgs = "Trying source 0 (type fbx) of library fbx ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/fbx && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += fbx\' \'QMAKE_LIBS_FBX = -lfbxsdk\' /home/ilya/Qt/5.15.1/Src/qt3d/config.tests/fbx" "+ cd /home/ilya/QtWS/cg_3/config.tests/fbx && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qt3d/config.tests/fbx -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qt3d/config.tests/fbx/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qt3d/config.tests/fbx/main.cpp:29:10: fatal error: fbxsdk.h: Нет такого файла или каталога" ">    29 | $${LITERAL_HASH}include <fbxsdk.h>" ">       |          ^~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.wayland-client._KEYS_ = result msgs
+cache.wayland-client.result = false
+cache.wayland-client.msgs = "Trying source 0 (type pkgConfig) of library wayland-client ..." "+ /usr/bin/pkg-config --exists --silence-errors wayland-client" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library wayland-client ..." "wayland-version.h not found in [] and global paths." "  => source produced no result."
+cache.wayland-egl._KEYS_ = result msgs
+cache.wayland-egl.result = false
+cache.wayland-egl.msgs = "Trying source 0 (type pkgConfig) of library wayland-egl ..." "+ /usr/bin/pkg-config --exists --silence-errors wayland-egl" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library wayland-egl ..." "wayland-egl.h not found in [] and global paths." "  => source produced no result." "Trying source 2 (type inline) of library wayland-egl ..." "wayland-egl.h not found in [] and global paths." "  => source produced no result."
+cache.wayland-server._KEYS_ = result msgs
+cache.wayland-server.result = false
+cache.wayland-server.msgs = "Trying source 0 (type pkgConfig) of library wayland-server ..." "+ /usr/bin/pkg-config --exists --silence-errors wayland-server" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library wayland-server ..." "wayland-version.h not found in [] and global paths." "  => source produced no result."
+cache.bluez._KEYS_ = result msgs
+cache.bluez.result = false
+cache.bluez.msgs = "Trying source 0 (type pkgConfig) of library bluez ..." "+ /usr/bin/pkg-config --exists --silence-errors bluez" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library bluez ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/bluez && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += bluez\' \'QMAKE_LIBS_BLUEZ = -lbluetooth\' /home/ilya/Qt/5.15.1/Src/qtconnectivity/config.tests/bluez" "+ cd /home/ilya/QtWS/cg_3/config.tests/bluez && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -fpermissive -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtconnectivity/config.tests/bluez -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtconnectivity/config.tests/bluez/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qtconnectivity/config.tests/bluez/main.cpp:29:10: fatal error: bluetooth/bluetooth.h: Нет такого файла или каталога" ">    29 | $${LITERAL_HASH}include <bluetooth/bluetooth.h>" ">       |          ^~~~~~~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.sensorfw._KEYS_ = result msgs
+cache.sensorfw.result = false
+cache.sensorfw.msgs = "Trying source 0 (type pkgConfig) of library sensorfw ..." "+ /usr/bin/pkg-config --exists --silence-errors sensord-qt5" "pkg-config did not find package." "  => source produced no result."
+cache.gypsy._KEYS_ = result msgs
+cache.gypsy.result = false
+cache.gypsy.msgs = "Trying source 0 (type pkgConfig) of library gypsy ..." "+ /usr/bin/pkg-config --exists --silence-errors gypsy gconf-2.0" "pkg-config did not find package." "  => source produced no result."
+cache.winrt_geolocation._KEYS_ = result msgs
+cache.winrt_geolocation.result = false
+cache.winrt_geolocation.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/winrt && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtlocation/config.tests/winrt" "+ cd /home/ilya/QtWS/cg_3/config.tests/winrt && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtlocation/config.tests/winrt -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtlocation/config.tests/winrt/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qtlocation/config.tests/winrt/main.cpp:30:10: fatal error: windows.system.h: Нет такого файла или каталога" ">    30 | $${LITERAL_HASH}include <windows.system.h>" ">       |          ^~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1"
+cache.alsa._KEYS_ = result msgs
+cache.alsa.result = false
+cache.alsa.msgs = "Trying source 0 (type inline) of library alsa ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/alsa && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += alsa\' \'QMAKE_LIBS_ALSA = -lasound\' /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/alsa" "+ cd /home/ilya/QtWS/cg_3/config.tests/alsa && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/alsa -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o alsatest.o /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/alsa/alsatest.cpp" "> /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/alsa/alsatest.cpp:29:10: fatal error: alsa/asoundlib.h: Нет такого файла или каталога" ">    29 | $${LITERAL_HASH}include <alsa/asoundlib.h>" ">       |          ^~~~~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: alsatest.o] Ошибка 1" " => source failed verification."
+cache.gstreamer_1_0._KEYS_ = result msgs
+cache.gstreamer_1_0.result = false
+cache.gstreamer_1_0.msgs = "Trying source 0 (type pkgConfig) of library gstreamer_1_0 ..." "+ /usr/bin/pkg-config --exists --silence-errors gstreamer-1.0 gstreamer-base-1.0 gstreamer-audio-1.0 gstreamer-video-1.0 gstreamer-pbutils-1.0 gstreamer-allocators-1.0" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library gstreamer_1_0 ..." "  => source failed condition \'config.win32 || config.macos\'." "Trying source 2 (type inline) of library gstreamer_1_0 ..." "  => source failed condition \'config.android && input.gstreamer != \'\'\'."
+cache.gstreamer_0_10._KEYS_ = result msgs
+cache.gstreamer_0_10.result = false
+cache.gstreamer_0_10.msgs = "Trying source 0 (type pkgConfig) of library gstreamer_0_10 ..." "+ /usr/bin/pkg-config --exists --silence-errors gstreamer-0.10 gstreamer-base-0.10 gstreamer-audio-0.10 gstreamer-video-0.10 gstreamer-pbutils-0.10 gstreamer-interfaces-0.10" "pkg-config did not find package." "  => source produced no result."
+cache.linux_v4l._KEYS_ = result msgs
+cache.linux_v4l.result = true
+cache.linux_v4l.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/linux_v4l && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/linux_v4l" "+ cd /home/ilya/QtWS/cg_3/config.tests/linux_v4l && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/linux_v4l -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/linux_v4l/main.cpp" "> g++ -Wl,-O1 -o linux_v4l main.o      "
+cache.openal._KEYS_ = result msgs
+cache.openal.result = false
+cache.openal.msgs = "Trying source 0 (type pkgConfig) of library openal ..." "+ /usr/bin/pkg-config --exists --silence-errors openal" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library openal ..." "  => source failed condition \'config.win32\'." "Trying source 2 (type inline) of library openal ..." "  => source failed condition \'config.darwin\'." "Trying source 3 (type inline) of library openal ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/openal && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += openal\' \'QMAKE_LIBS_OPENAL = -lopenal\' /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/openal" "+ cd /home/ilya/QtWS/cg_3/config.tests/openal && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I/home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/openal -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/openal/main.cpp" "> /home/ilya/Qt/5.15.1/Src/qtmultimedia/config.tests/openal/main.cpp:32:10: fatal error: AL/al.h: Нет такого файла или каталога" ">    32 | $${LITERAL_HASH}include <AL/al.h>" ">       |          ^~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.pulseaudio._KEYS_ = result msgs
+cache.pulseaudio.result = false
+cache.pulseaudio.msgs = "Trying source 0 (type pkgConfig) of library pulseaudio ..." "+ /usr/bin/pkg-config --exists --silence-errors libpulse \'>=\' 0.9.10 libpulse-mainloop-glib" "pkg-config did not find package." "  => source produced no result."
+cache.libresourceqt5._KEYS_ = result msgs
+cache.libresourceqt5.result = false
+cache.libresourceqt5.msgs = "Trying source 0 (type pkgConfig) of library libresourceqt5 ..." "+ /usr/bin/pkg-config --exists --silence-errors libresourceqt5" "pkg-config did not find package." "  => source produced no result."
+cache.flite._KEYS_ = result msgs
+cache.flite.result = false
+cache.flite.msgs = "Trying source 0 (type inline) of library flite ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/flite && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += flite\' \'QMAKE_LIBS_FLITE = -lflite_cmu_us_kal16 -lflite_usenglish -lflite_cmulex -lflite\' /home/ilya/QtWS/cg_3/config.tests/flite" "+ cd /home/ilya/QtWS/cg_3/config.tests/flite && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:2:10: fatal error: flite/flite.h: Нет такого файла или каталога" ">     2 | $${LITERAL_HASH}include <flite/flite.h>" ">       |          ^~~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.speechd._KEYS_ = result msgs
+cache.speechd.result = false
+cache.speechd.msgs = "Trying source 0 (type pkgConfig) of library speechd ..." "+ /usr/bin/pkg-config --exists --silence-errors speech-dispatcher" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library speechd ..." "+ cd /home/ilya/QtWS/cg_3/config.tests/speechd && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += speechd\' \'QMAKE_LIBS_SPEECHD = -lspeechd\' /home/ilya/QtWS/cg_3/config.tests/speechd" "+ cd /home/ilya/QtWS/cg_3/config.tests/speechd && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> main.cpp:2:10: fatal error: libspeechd.h: Нет такого файла или каталога" ">     2 | $${LITERAL_HASH}include <libspeechd.h>" ">       |          ^~~~~~~~~~~~~~" "> compilation terminated." "> make: *** [Makefile:169: main.o] Ошибка 1" " => source failed verification."
+cache.libclang._KEYS_ = result msgs
+cache.libclang.result = false
+cache.libclang.msgs = 
+cache.webengine-arch-support._KEYS_ = result msgs
+cache.webengine-arch-support.result = true
+cache.webengine-arch-support.msgs = 
+cache.webengine-bison._KEYS_ = result msgs
+cache.webengine-bison.result = false
+cache.webengine-bison.msgs = "Required bison could not be found."
+cache.webengine-submodule._KEYS_ = result msgs
+cache.webengine-submodule.result = true
+cache.webengine-submodule.msgs = 
+cache.webengine-nowhitespace._KEYS_ = result msgs
+cache.webengine-nowhitespace.result = true
+cache.webengine-nowhitespace.msgs = 
+cache.webengine-platform-support._KEYS_ = result msgs
+cache.webengine-platform-support.result = true
+cache.webengine-platform-support.msgs = 
+cache.webengine-gperf._KEYS_ = result msgs
+cache.webengine-gperf.result = false
+cache.webengine-gperf.msgs = "Required gperf could not be found."
+cache.webengine-flex._KEYS_ = result msgs
+cache.webengine-flex.result = false
+cache.webengine-flex.msgs = "Required flex could not be found."
+cache.webengine-host-pkg-config._KEYS_ = result msgs path
+cache.webengine-host-pkg-config.result = true
+cache.webengine-host-pkg-config.msgs = "Found host pkg-config: /usr/bin/pkg-config"
+cache.webengine-host-pkg-config.path = /usr/bin/pkg-config
+cache.webengine-jumbo-build._KEYS_ = result msgs merge_limit
+cache.webengine-jumbo-build.result = true
+cache.webengine-jumbo-build.msgs = "Setting jumbo build merge batch limit to 8."
+cache.webengine-jumbo-build.merge_limit = 8
+cache.webengine-noexecstack._KEYS_ = result msgs
+cache.webengine-noexecstack.result = true
+cache.webengine-noexecstack.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests && g++ -pipe -Wl,-z,noexecstack -o conftest-out conftest.cpp"
+cache.webengine-python2._KEYS_ = result msgs location
+cache.webengine-python2.result = true
+cache.webengine-python2.msgs = 
+cache.webengine-python2.location = /usr/bin/python2
+cache.webengine-dbus._KEYS_ = result msgs
+cache.webengine-dbus.result = false
+cache.webengine-dbus.msgs = "Trying source 0 (type pkgConfig) of library webengine-dbus ..." "+ /usr/bin/pkg-config --exists --silence-errors dbus-1" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-fontconfig._KEYS_ = result msgs
+cache.webengine-fontconfig.result = false
+cache.webengine-fontconfig.msgs = "Trying source 0 (type pkgConfig) of library webengine-fontconfig ..." "+ /usr/bin/pkg-config --exists --silence-errors fontconfig" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-glib._KEYS_ = result msgs
+cache.webengine-glib.result = false
+cache.webengine-glib.msgs = "Trying source 0 (type pkgConfig) of library webengine-glib ..." "+ /usr/bin/pkg-config --exists --silence-errors glib-2.0 \'>=\' 2.32.0" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-glibc._KEYS_ = result msgs
+cache.webengine-glibc.result = true
+cache.webengine-glibc.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/webengine-glibc && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/webengine-glibc" "+ cd /home/ilya/QtWS/cg_3/config.tests/webengine-glibc && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o webengine-glibc main.o      "
+cache.webengine-jsoncpp._KEYS_ = result msgs
+cache.webengine-jsoncpp.result = false
+cache.webengine-jsoncpp.msgs = "Trying source 0 (type pkgConfig) of library webengine-jsoncpp ..." "+ /usr/bin/pkg-config --exists --silence-errors jsoncpp" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-khr._KEYS_ = result msgs
+cache.webengine-khr.result = true
+cache.webengine-khr.msgs = "+ cd /home/ilya/QtWS/cg_3/config.tests/webengine-khr && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" /home/ilya/QtWS/cg_3/config.tests/webengine-khr" "+ cd /home/ilya/QtWS/cg_3/config.tests/webengine-khr && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o webengine-khr main.o      "
+cache.webengine-lcms2._KEYS_ = result msgs
+cache.webengine-lcms2.result = false
+cache.webengine-lcms2.msgs = "Trying source 0 (type pkgConfig) of library webengine-lcms2 ..." "+ /usr/bin/pkg-config --exists --silence-errors lcms2" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-libdrm._KEYS_ = result msgs
+cache.webengine-libdrm.result = false
+cache.webengine-libdrm.msgs = "Trying source 0 (type pkgConfig) of library webengine-libdrm ..." "+ /usr/bin/pkg-config --exists --silence-errors libdrm" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-libevent._KEYS_ = result msgs
+cache.webengine-libevent.result = false
+cache.webengine-libevent.msgs = "Trying source 0 (type pkgConfig) of library webengine-libevent ..." "+ /usr/bin/pkg-config --exists --silence-errors libevent" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-libvpx._KEYS_ = result msgs
+cache.webengine-libvpx.result = false
+cache.webengine-libvpx.msgs = "Trying source 0 (type pkgConfig) of library webengine-libvpx ..." "+ /usr/bin/pkg-config --exists --silence-errors vpx" "pkg-config did not find package." "  => source produced no result." "Trying source 1 (type inline) of library webengine-libvpx ..." "vpx/vpx_encoder.h not found in [] and global paths." "vpx/vp8cx.h not found in [] and global paths." "  => source produced no result."
+cache.webengine-webp._KEYS_ = result msgs
+cache.webengine-webp.result = false
+cache.webengine-webp.msgs = "Trying source 0 (type pkgConfig) of library webengine-webp ..." "+ /usr/bin/pkg-config --exists --silence-errors libwebp libwebpmux libwebpdemux" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-libxml2._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.webengine-libxml2.result = true
+cache.webengine-libxml2.msgs = "Trying source 0 (type pkgConfig) of library webengine-libxml2 ..." "+ /usr/bin/pkg-config --exists --silence-errors libxml-2.0 libxslt" "+ /usr/bin/pkg-config --modversion libxml-2.0 libxslt" "> 2.9.10" "> 1.1.34" "+ /usr/bin/pkg-config --libs-only-L libxml-2.0 libxslt" "+ /usr/bin/pkg-config --libs-only-l libxml-2.0 libxslt" "> -lxslt -lxml2" "+ /usr/bin/pkg-config --cflags libxml-2.0 libxslt" "> -I/usr/include/libxml2" "+ cd /home/ilya/QtWS/cg_3/config.tests/webengine-libxml2 && /home/ilya/QtWS/cg_3/qtbase/bin/qmake \"CONFIG -= qt debug_and_release app_bundle lib_bundle\" \"CONFIG += static warn_off console single_arch\" \'QMAKE_USE += webengine-libxml2\' \'QMAKE_LIBS_WEBENGINE_LIBXML2 = -lxslt -lxml2\' \'QMAKE_INCDIR_WEBENGINE_LIBXML2 = /usr/include/libxml2\' /home/ilya/QtWS/cg_3/config.tests/webengine-libxml2" "+ cd /home/ilya/QtWS/cg_3/config.tests/webengine-libxml2 && MAKEFLAGS= /usr/bin/make" "> g++ -c -pipe -O2 -w -fPIC  -I. -I/usr/include/libxml2 -I/home/ilya/Qt/5.15.1/Src/qtbase/mkspecs/linux-g++ -o main.o main.cpp" "> g++ -Wl,-O1 -o webengine-libxml2 main.o   -lxslt -lxml2   " " => source accepted."
+cache.webengine-libxml2.source = 0
+cache.webengine-libxml2.sources.0.libs = -lxslt -lxml2
+cache.webengine-libxml2.sources.0.includedir = /usr/include/libxml2
+cache.webengine-libxml2.sources.0.cflags = -I/usr/include/libxml2
+cache.webengine-libxml2.sources.0.version = 2.9.10
+cache.webengine-libxml2.sources.0.export = 
+cache.webengine-minizip._KEYS_ = result msgs
+cache.webengine-minizip.result = false
+cache.webengine-minizip.msgs = "Trying source 0 (type pkgConfig) of library webengine-minizip ..." "+ /usr/bin/pkg-config --exists --silence-errors minizip" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-ninja._KEYS_ = result msgs
+cache.webengine-ninja.result = false
+cache.webengine-ninja.msgs = "Building own ninja"
+cache.webengine-nss._KEYS_ = result msgs
+cache.webengine-nss.result = false
+cache.webengine-nss.msgs = "Trying source 0 (type pkgConfig) of library webengine-nss ..." "+ /usr/bin/pkg-config --exists --silence-errors nss \'>=\' 3.26" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-opus._KEYS_ = result msgs
+cache.webengine-opus.result = false
+cache.webengine-opus.msgs = "Trying source 0 (type pkgConfig) of library webengine-opus ..." "+ /usr/bin/pkg-config --exists --silence-errors opus \'>=\' 1.3.1" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-protobuf._KEYS_ = result msgs
+cache.webengine-protobuf.result = false
+cache.webengine-protobuf.msgs = "Trying source 0 (type pkgConfig) of library webengine-protobuf ..." "+ /usr/bin/pkg-config --exists --silence-errors protobuf" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-re2._KEYS_ = result msgs
+cache.webengine-re2.result = false
+cache.webengine-re2.msgs = "Trying source 0 (type pkgConfig) of library webengine-re2 ..." "+ /usr/bin/pkg-config --exists --silence-errors re2" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-snappy._KEYS_ = result msgs
+cache.webengine-snappy.result = false
+cache.webengine-snappy.msgs = "Trying source 0 (type inline) of library webengine-snappy ..." "snappy.h not found in [] and global paths." "  => source produced no result."
+cache.webengine-x11._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.webengine-x11.result = true
+cache.webengine-x11.msgs = "Trying source 0 (type pkgConfig) of library webengine-x11 ..." "+ /usr/bin/pkg-config --exists --silence-errors x11" "+ /usr/bin/pkg-config --modversion x11" "> 1.6.9" "+ /usr/bin/pkg-config --libs-only-L x11" "+ /usr/bin/pkg-config --libs-only-l x11" "> -lX11" "+ /usr/bin/pkg-config --cflags x11" " => source accepted."
+cache.webengine-x11.source = 0
+cache.webengine-x11.sources.0.libs = -lX11
+cache.webengine-x11.sources.0.includedir = 
+cache.webengine-x11.sources.0.cflags = 
+cache.webengine-x11.sources.0.version = 1.6.9
+cache.webengine-x11.sources.0.export = 
+cache.webengine-xcomposite._KEYS_ = result msgs
+cache.webengine-xcomposite.result = false
+cache.webengine-xcomposite.msgs = "Trying source 0 (type pkgConfig) of library webengine-xcomposite ..." "+ /usr/bin/pkg-config --exists --silence-errors xcomposite" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-xcursor._KEYS_ = result msgs
+cache.webengine-xcursor.result = false
+cache.webengine-xcursor.msgs = "Trying source 0 (type pkgConfig) of library webengine-xcursor ..." "+ /usr/bin/pkg-config --exists --silence-errors xcursor" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-xi._KEYS_ = result msgs
+cache.webengine-xi.result = false
+cache.webengine-xi.msgs = "Trying source 0 (type pkgConfig) of library webengine-xi ..." "+ /usr/bin/pkg-config --exists --silence-errors xi" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-xtst._KEYS_ = result msgs
+cache.webengine-xtst.result = false
+cache.webengine-xtst.msgs = "Trying source 0 (type pkgConfig) of library webengine-xtst ..." "+ /usr/bin/pkg-config --exists --silence-errors xtst" "pkg-config did not find package." "  => source produced no result."
+cache.webengine-zlib._KEYS_ = result msgs source sources.0.libs sources.0.includedir sources.0.cflags sources.0.version sources.0.export
+cache.webengine-zlib.result = true
+cache.webengine-zlib.msgs = "Trying source 0 (type pkgConfig) of library webengine-zlib ..." "+ /usr/bin/pkg-config --exists --silence-errors zlib" "+ /usr/bin/pkg-config --modversion zlib" "> 1.2.11" "+ /usr/bin/pkg-config --libs-only-L zlib" "+ /usr/bin/pkg-config --libs-only-l zlib" "> -lz" "+ /usr/bin/pkg-config --cflags zlib" " => source accepted."
+cache.webengine-zlib.source = 0
+cache.webengine-zlib.sources.0.libs = -lz
+cache.webengine-zlib.sources.0.includedir = 
+cache.webengine-zlib.sources.0.cflags = 
+cache.webengine-zlib.sources.0.version = 1.2.11
+cache.webengine-zlib.sources.0.export = 

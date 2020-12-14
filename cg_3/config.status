@@ -1,0 +1,2 @@
+#!/bin/sh
+exec ../../Qt/5.15.1/Src/configure -redo "$@"

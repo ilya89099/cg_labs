@@ -1,0 +1,2 @@
+QTREPOS += /home/ilya/QtWS/cg_3/qtbase
+QMAKEMODULES += /home/ilya/QtWS/cg_3/qtbase/mkspecs/modules

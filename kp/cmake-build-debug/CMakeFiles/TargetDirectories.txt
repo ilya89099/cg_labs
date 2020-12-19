@@ -1,0 +1,4 @@
+/home/ilya/CLionWS/my_kp_cg/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ilya/CLionWS/my_kp_cg/cmake-build-debug/CMakeFiles/glad.dir
+/home/ilya/CLionWS/my_kp_cg/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ilya/CLionWS/my_kp_cg/cmake-build-debug/CMakeFiles/kg_kp.dir
